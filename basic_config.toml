@@ -1,0 +1,38 @@
+[app]
+    port = 8080
+    name = "admin"
+    env = "local"
+    debug = true
+    url = "http://localhost"
+
+[database]
+    connection = "mysql"
+    username = "root"
+    password = "pwd"
+    host = "127.0.0.1"
+    port = 3306
+    db_name = "xk_ilink"
+    timeout = "5s"
+    read_timeout = "5s"
+    write_timeout = "5s"
+    parse_time = "5s"
+    loc = "Local"
+    charset = "utf8mb4"
+    collation = "utf8mb4_unicode_ci"
+
+    # user:password@tcp(host:port)/database?xxxx(～￣▽￣)～
+    # dsn = "root:pengge1202@tcp(127.0.0.1:3308)/xk_ilink?timeout=5s&readTimeout=5s&writeTimeout=5s&parseTime=true&loc=Local&charset=utf8mb4&collation=utf8mb4_unicode_ci"
+
+[redis]
+    host = "127.0.0.1"
+    password = "frogmp"
+    port = 6379
+    database = 0
+
+[wechat]
+    appid = "wxcbfbb2d45c87a511"
+    app_secret = "b649ad8b8ecc300c89f5048238c4be21"
+
+[log]
+    path = "wxxk/storage/log/"
+    log_level = "debug"
